@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react__spaceNews/static/css/main.10c070e8.css",
+    "main.js": "/react__spaceNews/static/js/main.dd3504ec.js",
+    "index.html": "/react__spaceNews/index.html",
+    "main.10c070e8.css.map": "/react__spaceNews/static/css/main.10c070e8.css.map",
+    "main.dd3504ec.js.map": "/react__spaceNews/static/js/main.dd3504ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10c070e8.css",
+    "static/js/main.dd3504ec.js"
+  ]
+}
