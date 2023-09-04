@@ -1,0 +1,157 @@
+.favorite {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.wrapper {
+    max-height: 3rem;
+    overflow-y: hidden;
+
+    box-shadow: 0px 0px 3px 0px #ccc;
+    border-radius: .8rem;
+
+
+    padding: 1rem 2rem;
+
+    transition: .5s ease-in-out;
+    &.open {
+        max-height: 30rem;
+    }
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 2rem;
+    max-width: 70%;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    transition: .3s ease-in-out;
+}
+
+.open .title {
+    white-space: break-spaces;
+}
+
+.indicator {
+    width: 3%;
+    height: 2.5rem;
+
+    display:block;
+
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+.left {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left:0;
+    width: 20px;
+    height: 5px;
+    display: block;
+    transform: rotate(35deg);
+    float: right;
+    border-radius: 2px;
+
+    &::after {
+        content:"";
+        background-color: #000;
+        width: 20px;
+        height: 5px;
+        display: block;
+        float: right;
+        border-radius: 6px 10px 10px 6px;
+        transition: all .7s cubic-bezier(.25,1.7,.35,.8);
+        z-index: -1;
+    }
+}
+
+.right{
+    position: absolute;
+    background-color: transparent;
+    top: 0px;
+    left:13px;
+    width: 20px;
+    height: 5px;
+    display: block;
+    transform: rotate(-35deg);
+    float: right;
+    border-radius: 2px;
+
+    &::after {
+        content:"";
+        background-color: #000;
+        width: 20px;
+        height: 5px;
+        display: block;
+        float: right;
+        border-radius: 10px 6px 6px 10px;
+        transition: all .7s cubic-bezier(.25,1.7,.35,.8);
+        z-index: -1;
+    }
+}
+
+.open .left::after {
+    transform-origin: center center;
+    transform: rotate(-70deg);
+}
+
+.open .right::after {
+    transform-origin: center center;
+    transform: rotate(70deg);
+}
+
+.description{
+    padding: 1rem;
+}
+
+.summary {
+    font-size: 1rem;
+    text-align: justify;
+
+    color: #777777;
+}
+
+.link {
+    margin-top: .65rem;
+    margin-bottom: 2rem;
+
+    font-size: .85rem;
+    color: #ccc;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: .3s ease-in-out;
+    &:hover {
+        color: #000;
+    }
+}
+
+.published {
+    text-align: right;
+    font-size: .75rem;
+    color: #ccc;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

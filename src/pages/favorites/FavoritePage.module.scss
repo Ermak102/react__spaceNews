@@ -1,0 +1,32 @@
+.favorite {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+
+    display: block;
+
+    padding-bottom: .7rem;
+
+    position: relative;
+    &::before {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        width: 10%;
+        height: 2px;
+
+        margin: 0 auto;
+
+        background-color: rgb(25, 118, 210);
+    }
+}
+

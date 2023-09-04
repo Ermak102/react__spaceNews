@@ -1,0 +1,54 @@
+.details{
+
+}
+
+.published {
+    margin: .7rem 0;
+
+    font-size: .75rem;
+    color: #ccc;
+
+    text-align: right;
+}
+
+.image-wrapper{
+    width: 100%;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+
+    text-align: center;
+}
+
+.body {
+    font-size: 1rem;
+
+    margin-top: .8rem;
+    color: #252525;
+
+    text-align: justify;
+    text-indent: 1rem;
+    line-height: 1.4rem;
+}
+
+table{
+
+    span{
+        font-weight: bold;
+        padding-right: 1rem;
+    }
+
+    i{
+        color: #000;
+    }
+}

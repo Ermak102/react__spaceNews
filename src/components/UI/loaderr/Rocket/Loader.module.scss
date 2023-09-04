@@ -1,0 +1,21 @@
+.loader{
+    position: absolute;
+
+    top: 50%;
+    left: 47%;
+
+    padding-top: 5rem;
+}
+
+.animation{
+    animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0%, 100%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(0px, -20px);
+    }
+}

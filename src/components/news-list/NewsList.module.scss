@@ -1,0 +1,17 @@
+.list {
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.none {
+    font-size: 1rem;
+
+    margin: 2rem 0rem;
+
+    text-align: center;
+}
